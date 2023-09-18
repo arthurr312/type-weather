@@ -1,12 +1,12 @@
-import MainScreen from "@/components/main-screen";
-import GlobalStyle from "./styles/global";
 import { ThemeProvider } from "styled-components";
-import colors from "./styles/colors";
+import { Logo, MainScreen } from "@/components";
+import { colors, GlobalStyle } from "@/styles";
 function App() {
   return (
     <>
       <ThemeProvider theme={colors}>
         <GlobalStyle />
+        <Logo />
         <MainScreen />
       </ThemeProvider>
     </>

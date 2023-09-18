@@ -1,4 +1,5 @@
 export default {
+  "blue-light": "#8FB2F5",
   dark_gray: {
     "gray-900": "#13131A",
     "gray-800": "#16161F",
