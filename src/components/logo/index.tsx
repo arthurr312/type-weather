@@ -1,9 +1,11 @@
-import { Container, Cloud, Name } from "./style";
+import { Container, Cloud, Name, CenteredContainer } from "./style";
 export default function Logo() {
   return (
-    <Container>
-      <Cloud />
-      <Name>TypeWeather</Name>
-    </Container>
+    <CenteredContainer>
+      <Container>
+        <Cloud />
+        <Name>TypeWeather</Name>
+      </Container>
+    </CenteredContainer>
   );
 }

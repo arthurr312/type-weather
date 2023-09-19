@@ -1,12 +1,19 @@
 import styled, { css } from "styled-components";
 import CloudImage from "@/assets/logo/cloud.svg";
 
+export const CenteredContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const Container = styled.div`
   display: flex;
+  position: absolute;
   gap: 5px;
   justify-content: center;
   align-items: center;
-  margin-top: 32px;
+  top: 32px;
 `;
 
 export const Cloud = styled.img.attrs({

@@ -1,4 +1,6 @@
 import { SpinnerIcon } from "./style";
-export const LoadingSpinner = () => {
+function LoadingSpinner() {
   return <SpinnerIcon />;
-};
+}
+
+export default LoadingSpinner;

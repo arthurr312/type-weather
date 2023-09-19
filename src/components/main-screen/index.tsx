@@ -1,3 +1,4 @@
+import { AutoComplete } from "@/components";
 import { Container, H1, Span, Paragraph } from "./style";
 function MainScreen() {
   return (
@@ -6,6 +7,7 @@ function MainScreen() {
         Boas vindas ao <Span>TypeWeather</Span>
       </H1>
       <Paragraph>Escolha um local para ver a previsão do tempo</Paragraph>
+      <AutoComplete />
     </Container>
   );
 }
