@@ -14,5 +14,5 @@ export const SpinnerIcon = styled(Spinner).attrs({
     }
   }
   animation: spin 1.5s linear infinite;
-  background: transparent;
+  position: absolute;
 `;

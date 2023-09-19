@@ -4,6 +4,13 @@ export const Container = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .field-icon-alignment {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const Autocomplete = styled.input.attrs({
@@ -25,7 +32,6 @@ export const Autocomplete = styled.input.attrs({
 `;
 
 export const AlignSpinner = styled.div`
-  background: transparent;
   position: relative;
   top: 60px;
   right: 50px;
@@ -50,7 +56,7 @@ export const OptionsCardContainer = styled.div`
 export const OptionsCard = styled.button`
   padding: 16px;
   cursor: pointer;
-  
+
   ${({ theme }) => css`
     background: ${theme.dark_gray["gray-500"]};
     color: ${theme.light_gray["gray-100"]};
@@ -59,7 +65,6 @@ export const OptionsCard = styled.button`
   p {
     font-family: inherit;
     font-size: 16px;
-    background: transparent;
     text-align: left;
   }
 `;
