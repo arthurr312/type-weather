@@ -1,30 +1,37 @@
 import { AutoComplete } from "@/components";
 import { Container, H1, Span, Paragraph } from "./style";
-function MainScreen() {
+
+interface MainScreenProps {
+  setCity: React.Dispatch<React.SetStateAction<string>>;
+}
+
+function MainScreen({ setCity }: MainScreenProps) {
   const data = [
     {
       city: "Santa Cruz",
       uf: "RN",
-      country: "Brasil"
+      country: "Brasil",
     },
     {
       city: "Natal",
       uf: "RN",
-      country: "Brasil"
+      country: "Brasil",
     },
     {
       city: "Tangará",
       uf: "RN",
-      country: "Brasil"
-    }
-  ]
+      country: "Brasil",
+    },
+  ];
   return (
     <Container>
-      <H1>
-        Boas vindas ao <Span>TypeWeather</Span>
-      </H1>
-      <Paragraph>Escolha um local para ver a previsão do tempo</Paragraph>
-      <AutoComplete data={data} />
+      <div className="align-content">
+        <H1>
+          Boas vindas ao <Span>TypeWeather</Span>
+        </H1>
+        <Paragraph>Escolha um local para ver a previsão do tempo</Paragraph>
+        <AutoComplete setCity={setCity} data={data} />
+      </div>
     </Container>
   );
 }

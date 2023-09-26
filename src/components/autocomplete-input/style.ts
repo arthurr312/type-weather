@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { CaretCircleRight } from "@phosphor-icons/react";
 
 export const Container = styled.div`
   display: flex;
@@ -18,7 +19,7 @@ export const Autocomplete = styled.input.attrs({
 })`
   margin-top: 48px;
   height: 8px;
-  width: 40%;
+  width: 100%;
   border-radius: 8px;
   outline: none;
   padding: 24px;
@@ -31,6 +32,15 @@ export const Autocomplete = styled.input.attrs({
   `}
 `;
 
+export const SearchIcon = styled(CaretCircleRight).attrs({
+  color: "gray",
+  size: 32,
+})`
+  position: absolute;
+  opacity: 50%;
+  cursor: pointer;
+`;
+
 export const AlignSpinner = styled.div`
   position: relative;
   top: 60px;
@@ -40,7 +50,7 @@ export const AlignSpinner = styled.div`
 export const OptionsCardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 43.8%;
+  width: 100%;
   gap: 1px;
   & > :first-of-type {
     margin-top: 8px;

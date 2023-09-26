@@ -11,7 +11,14 @@ export const Container = styled.div`
 export const H1 = styled.h1`
   ${({ theme }) => css`
     color: ${theme.light_gray["gray-100"]};
+    text-align: center;
   `}
+  @media (max-width: 480px) {
+    font-size: 1.5em;
+  }
+  @media (max-width: 360px) {
+    font-size: 1.3em;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -19,7 +26,14 @@ export const Paragraph = styled.p`
   margin-top: 8px;
   ${({ theme }) => css`
     color: ${theme.light_gray["gray-200"]};
+    text-align: center;
   `}
+  @media (max-width: 480px) {
+    font-size: 1em;
+  }
+  @media (max-width: 360px) {
+    font-size: 0.9em;
+  }
 `;
 
 export const Span = styled.span`
