@@ -17,7 +17,6 @@ export const Container = styled.div`
 export const Autocomplete = styled.input.attrs({
   placeholder: "Buscar Local",
 })`
-  margin-top: 48px;
   height: 8px;
   width: 100%;
   border-radius: 8px;
@@ -43,8 +42,8 @@ export const SearchIcon = styled(CaretCircleRight).attrs({
 
 export const AlignSpinner = styled.div`
   position: relative;
-  top: 60px;
-  right: 50px;
+  top: 13px;
+  right: 40px;
 `;
 
 export const OptionsCardContainer = styled.div`

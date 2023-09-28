@@ -30,7 +30,9 @@ function MainScreen({ setCity }: MainScreenProps) {
           Boas vindas ao <Span>TypeWeather</Span>
         </H1>
         <Paragraph>Escolha um local para ver a previsão do tempo</Paragraph>
-        <AutoComplete setCity={setCity} data={data} />
+        <div className="autocomplete-container">
+          <AutoComplete setCity={setCity} data={data} />
+        </div>
       </div>
     </Container>
   );

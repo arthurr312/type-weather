@@ -6,6 +6,10 @@ export const Container = styled.div`
   height: 100vh;
   justify-content: center;
   align-items: center;
+
+  .autocomplete-container {
+    margin-top: 48px;
+  }
 `;
 
 export const H1 = styled.h1`

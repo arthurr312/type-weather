@@ -7,7 +7,6 @@ import {
   OptionsCard,
   OptionsCardContainer,
 } from "./style";
-import { useNavigate } from "react-router-dom";
 
 interface AutoCompleteProps {
   data: any;
@@ -16,7 +15,6 @@ interface AutoCompleteProps {
 }
 
 function AutoComplete({ setCity, data, loading = false }: AutoCompleteProps) {
-  const navigate = useNavigate();
   return (
     <Container>
       <div className="field-icon-alignment">
@@ -29,7 +27,9 @@ function AutoComplete({ setCity, data, loading = false }: AutoCompleteProps) {
           {loading ? (
             <LoadingSpinner />
           ) : (
-            <SearchIcon onClick={() => navigate("/santa cruz")} />
+            <SearchIcon
+              onClick={() => window.location.href = "/santa cruz"}
+            />
           )}
         </AlignSpinner>
       </div>
