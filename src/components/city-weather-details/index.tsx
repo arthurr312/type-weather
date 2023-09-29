@@ -2,6 +2,7 @@ import { Container } from "./style";
 import { AutoComplete } from "@/components";
 import CloudImage from "@/assets/logo/cloud.svg";
 import WeatherIcon from "@/assets/weather-icons/night/few-clouds-night.svg";
+import { Wind } from "@phosphor-icons/react";
 
 function CityWeatherDetails() {
   return (
@@ -36,8 +37,17 @@ function CityWeatherDetails() {
           </div>
         </div>
       </div>
-      <div className="first-container">
-        <h1>teste</h1>
+      <div className="second-container">
+        <div className="weather-details-container">
+          <p>Detalhes do clima hoje</p>
+          <div>
+            <Wind size={32} /> 
+            <p>Sensação Térmica</p>
+          </div>
+        </div>
+        <div className="weather-details-container">
+          <p>Previsão para 5 dias</p>
+        </div>
       </div>
     </Container>
   );

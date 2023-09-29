@@ -87,5 +87,28 @@ export const Container = styled.div`
         }
       }
     }
+
+    .second-container {
+      display: flex;
+      gap: 16px;
+      flex-direction: column;
+      height: 92%;
+      width: 50%;
+      padding: 8px;
+      margin: 16px;
+
+      .weather-details-container {
+        padding: 22px;
+        border-radius: 8px;
+        height: 100%;
+        background: ${theme.dark_gray["gray-800"]};
+        box-shadow: 8px 9px 9px -5px rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        font-size: 16px;
+        color: ${theme.light_gray["gray-400"]};
+      }
+    }
   `}
 `;
