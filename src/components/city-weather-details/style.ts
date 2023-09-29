@@ -1,5 +1,14 @@
 import styled, { css } from "styled-components";
+import Cloud from "@/assets/logo/cloud.svg";
+import Weather from "@/assets/weather-icons/night/few-clouds-night.svg";
 import WeatherImage from "@/assets/weather-images/few-clouds-night.svg";
+import {
+  CloudRain,
+  Drop,
+  SunDim,
+  ThermometerSimple,
+  Wind,
+} from "@phosphor-icons/react";
 
 export const Container = styled.div`
   display: flex;
@@ -103,12 +112,69 @@ export const Container = styled.div`
         height: 100%;
         background: ${theme.dark_gray["gray-800"]};
         box-shadow: 8px 9px 9px -5px rgba(0, 0, 0, 0.1);
+
+        .info-alignment {
+          border-bottom: 1px solid ${theme.dark_gray["gray-600"]};
+          padding: 8px;
+          margin-top: 16px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .icon-label-alignment {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          }
+        }
+        & > :last-of-type {
+          border-bottom: none;
+        }
+      }
+
+      h4 {
+        font-weight: lighter;
+        color: ${theme.light_gray["gray-400"]};
       }
 
       p {
-        font-size: 16px;
-        color: ${theme.light_gray["gray-400"]};
+        font-weight: bold;
+        color: ${theme.light_gray["gray-200"]};
       }
     }
   `}
 `;
+
+export const CloudImage = styled.img.attrs({
+  src: Cloud,
+})``;
+
+export const WeatherIcon = styled.img.attrs({
+  width: 200,
+  height: 200,
+  src: Weather,
+})``;
+
+export const CloudRainIcon = styled(CloudRain).attrs({
+  color: "gray",
+  size: 24,
+})``;
+
+export const DropIcon = styled(Drop).attrs({
+  color: "gray",
+  size: 24,
+})``;
+
+export const SunDimIcon = styled(SunDim).attrs({
+  color: "gray",
+  size: 24,
+})``;
+
+export const ThermometerSimpleIcon = styled(ThermometerSimple).attrs({
+  color: "gray",
+  size: 24,
+})``;
+
+export const WindIcon = styled(Wind).attrs({
+  color: "gray",
+  size: 24,
+})``;
