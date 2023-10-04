@@ -22,7 +22,7 @@ export const Container = styled.div`
       align-items: flex-start;
       padding: 8px;
       margin: 16px;
-      height: 90%;
+      height: 93%;
       width: 50%;
       background: ${theme.dark_gray["gray-800"]};
       box-shadow: 8px 9px 9px -5px rgba(0, 0, 0, 0.1);
@@ -101,7 +101,7 @@ export const Container = styled.div`
       display: flex;
       gap: 16px;
       flex-direction: column;
-      height: 92%;
+      height: 96%;
       width: 50%;
       padding: 8px;
       margin: 16px;
@@ -128,6 +128,36 @@ export const Container = styled.div`
         }
         & > :last-of-type {
           border-bottom: none;
+        }
+
+        .weather-container-alignment {
+          display: flex;
+          height: 100%;
+          gap: 24px;
+          justify-content: center;
+          align-items: center;
+
+          .weather-detail {
+            display: inherit;
+            flex-direction: column;
+            align-items: center;
+
+            .day {
+              color: ${theme.light_gray["gray-200"]};
+              font-weight: bold;
+            }
+
+            p {
+              color: ${theme.light_gray["gray-200"]};
+              font-weight: 400;
+              text-align: center;
+              font-size: 14px;
+            }
+
+            span {
+              color: ${theme.light_gray["gray-400"]};
+            }
+          }
         }
       }
 

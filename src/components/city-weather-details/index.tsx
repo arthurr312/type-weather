@@ -9,7 +9,11 @@ import {
   WindIcon,
 } from "./style";
 import { AutoComplete } from "@/components";
-import StormyDay from '@/assets/weather-icons/day/stormy-day.svg';
+import StormyDay from "@/assets/weather-icons/day/stormy-day.svg";
+import RainingDay from "@/assets/weather-icons/day/raining-day.svg";
+import FewClouds from "@/assets/weather-icons/day/few-clouds-day.svg";
+import CloudyDay from "@/assets/weather-icons/day/cloudy-day.svg";
+import ClearDay from "@/assets/weather-icons/day/clear-day.svg";
 
 function CityWeatherDetails() {
   return (
@@ -85,8 +89,52 @@ function CityWeatherDetails() {
         </div>
         <div className="weather-details-container">
           <h4>Previsão para 5 dias</h4>
-          <p>Amanhã</p>
-          <img width={130} height={130} src={StormyDay} />
+          <div className="weather-container-alignment">
+            <div className="weather-detail">
+              <p className="day">Amanhã</p>
+              <img width={100} height={100} src={StormyDay} />
+              <p>Temporal</p>
+              <p>
+                32ºc - <span> 26ºc</span>
+              </p>
+            </div>
+            <div className="weather-detail">
+              <p className="day">Quarta-feira</p>
+              <img width={100} height={100} src={RainingDay} />
+              <p>Chuva</p>
+              <p>
+                32ºc - <span> 26ºc</span>
+              </p>
+            </div>
+            <div className="weather-detail">
+              <p className="day">Quinta-feira</p>
+              <img width={100} height={100} src={FewClouds} />
+              <p>Poucas nuvens</p>
+              <p>
+                32ºc - <span> 26ºc</span>
+              </p>
+            </div>
+            <div className="weather-detail">
+              <p className="day">Sexta-feira</p>
+              <img width={100} height={100} src={CloudyDay} />
+              <p>Nublado</p>
+              <p>
+                32ºc - <span> 26ºc</span>
+              </p>
+            </div>
+            <div className="weather-detail">
+              <p className="day">Sábado</p>
+              <img
+                width={100}
+                height={100}
+                src={ClearDay}
+              />
+              <p>Céu limpo</p>
+              <p>
+                32ºc - <span> 26ºc</span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </Container>
